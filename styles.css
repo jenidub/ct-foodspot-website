@@ -15,6 +15,7 @@ body, * {
     font-weight: 400;
     font-style: bold;
     font-size: 2rem;
+    text-decoration: none;
 }
 
 .btn {
@@ -49,9 +50,7 @@ header {
     text-decoration: none;
 }
 
-header .logo span,
-.about-content .titleText span,
-.menu-section h3 span {
+.headerTextHighlight {
     color: #ff0157;
 }
 
@@ -125,21 +124,36 @@ header .logo span,
 }
 
 /* Our Menu Section Styling */
-.menu-section {
+.menu-section,
+.experts-section {
     padding: 100px;
     background-color: #f4f4f4;
 }
 
-.menu-content {
+.menu-content,
+.experts-content {
     text-align: center;
     font-size: 1.25em;
 }
 
-.menu-card-container {
+.menu-card-container,
+.experts-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu-card:hover,
+.expert-card:hover {
+    transform: translateY(-10px);
+}
+
+.menu-card h4,
+.expert-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .menu-card {
@@ -150,17 +164,20 @@ header .logo span,
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out;
-    flex: 0 0 25%;
+    flex: 1 1 25%;
 }
 
-.menu-card:hover {
-    transform: translateY(-10px);
-}
-
-.menu-card h4 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    font-weight: 600;
+/* Kitchen Experts Section Styling */
+.expert-card {
+    width: 200px;
+    /* height: fit-content; */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    background: white;
 }
 
 /* ============================ */
