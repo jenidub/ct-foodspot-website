@@ -1,11 +1,8 @@
+/* Universal Styling */
 body, * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -20,6 +17,20 @@ body, * {
     font-size: 2rem;
 }
 
+.btn {
+    color: #fff;
+    background-color: #ff0157;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.5s;
+    font-size: 1.25em;
+}
+
+/* Header | Navbar Styling */
 header {
     position: fixed;
     top: 0;
@@ -36,7 +47,6 @@ header {
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
-    margin-bottom: 20px;
 }
 
 header .logo span,
@@ -58,6 +68,7 @@ header .logo span,
     color: #000;
 }
 
+/* Banner Section Styling */
 .banner {
     width: 100vw;
     height: 100vh;
@@ -84,19 +95,7 @@ header .logo span,
     margin-bottom: 10px;
 }   
 
-.btn {
-    color: #fff;
-    background-color: #ff0157;
-    padding: 20px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    display: inline-block;
-    transition: 0.5s;
-    font-size: 1.5em;
-}
-
+/* About Us Section Styling */
 .row {
     display: flex;
     justify-content: space-between;
@@ -108,6 +107,7 @@ header .logo span,
 }
 
 .imgbx img {
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -116,6 +116,7 @@ header .logo span,
     font-family: "Inter", sans-serif;
     font-size: 1.3em;
     text-wrap: wrap;
+    background-color: #F4F4F4;
 }
 
 .about-section p {
@@ -123,6 +124,46 @@ header .logo span,
     line-height: 1.5;
 }
 
+/* Our Menu Section Styling */
+.menu-section {
+    padding: 100px;
+    background-color: #f4f4f4;
+}
+
+.menu-content {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.menu-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 0 0 25%;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+}
+
+.menu-card h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* ============================ */
 /* Media Queries */
 @media (max-width: 768px) {
     .row {
