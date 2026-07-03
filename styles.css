@@ -298,6 +298,29 @@ header {
     color: lightgrey;
 }
 
+/* Footer Section Styling */
+.footer-section {
+    background-color: #ff0157;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.footer-social-icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-social-icon-container i {
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
 
 /* ============================ */
 /* Media Queries */
